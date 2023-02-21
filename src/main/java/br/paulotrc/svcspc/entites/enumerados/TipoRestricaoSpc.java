@@ -12,4 +12,8 @@ public enum TipoRestricaoSpc {
     TipoRestricaoSpc(String descricao) {
         this.descricao = descricao;
     }
+    
+    
+    
+    
 }
