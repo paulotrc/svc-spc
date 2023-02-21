@@ -40,7 +40,7 @@ public interface SpcResourceI {
                             schema = @Schema(implementation = Void.class))}),
 
     })
-    @GetMapping (value = "/spc/{cpf}", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping (value = "/spc/cpf/{cpf}", produces = {MediaType.APPLICATION_JSON_VALUE})
     @Valid
     ResponseEntity<List<SpcResponse>> get(
             @Parameter(name = "cpf", description = "Número do CPF do Cliente", required = true)
